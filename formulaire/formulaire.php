@@ -3,9 +3,6 @@
     <title>Formulaire en PHP/MySQL</title>
   </head>
   <body>
-
-
-    
     <form method="POST" action="formulaire/traitement.php">
       Nom : <input type="text" name="nom" placeholder="Entrez votre nom" /><br />
       Prénom : <input type="text" name="prenom" placeholder="Entrer votre Prenom" /><br />
