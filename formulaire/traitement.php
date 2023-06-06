@@ -6,6 +6,7 @@ $nom = $_POST["nom"];
 $prenom = $_POST["prenom"];
 $email = $_POST["email"];
 $mdp = md5($_POST["mdp"]);
+
 $sth = $conn->prepare("INSERT INTO users(nom,prenom,email,mdp)
 VALUES(:nom, :prenom, :email, :mdp)");
 $sth->bindParam(':nom',$nom);

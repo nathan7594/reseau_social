@@ -8,7 +8,9 @@
         <h1>Bases de donnés</h1>
 
         <?php
-        include 'formulaire/formulaire.php'
+        include 'formulaire/formulaire.php';
+       
+        // include 'test/connexion.php'
         ?>
 
     </body>

@@ -2,7 +2,7 @@
 
 function verification(){
     include "../connectDb.php";
-    session_start();
+    include "../session.php";
     $inputemail = $_POST['email'];
     $inputmdp = md5($_POST['mdp']);
     $sql ="SELECT * FROM `users` WHERE email='".$inputemail."'";
@@ -19,6 +19,7 @@ function verification(){
             $mdp = $row['mdp'];
         }
         if($row['email'] == $inputemail && $row['mdp'] == $inputmdp){
+            // header("Location:../profil/profil.php");
             header("Location:../profil/profil.php");
         }
         else{

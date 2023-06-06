@@ -1,5 +1,5 @@
 <?php 
-session_start();
+include "../../session.php";
 $nom = $_SESSION["nom"];
 $prenom = $_SESSION["prenom"];
 $email = $_SESSION["email"];
@@ -20,14 +20,5 @@ $mdp = $_SESSION["mdp"];
       Email : <input type="email" name="email" placeholder="Changer votre Email" value="<?php echo $email; ?>"/><br />
       Mot de Passe : <input type="password" name="mdp" placeholder="Changer votre mot de passe" value="<?php echo $mdp; ?>"/><br />
       <input type="submit" value="Modification" />
-
-
-    
 </body>
 </html>
-    <!-- <form method="POST" action="update.php"></form>
-    Nom : <input type="text" name="nom" placeholder="Changer votre nom" /><br />
-      Prénom : <input type="text" name="prenom" placeholder="Changer votre Prenom" /><br />
-      Email : <input type="email" name="email" placeholder="Changer votre Email" /><br />
-      Mot de Passe : <input type="password" name="mdp" placeholder="Changer votre mot de passe" /><br />
-      <input type="submit" value="oui" /> -->
